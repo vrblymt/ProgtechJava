@@ -35,6 +35,7 @@ public class KarakterInfo extends javax.swing.JFrame {
         karakterTortenet = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Karakter felfedezes");
         setResizable(false);
 
         jButton1.setBackground(new java.awt.Color(255, 204, 0));
