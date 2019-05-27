@@ -64,6 +64,9 @@ public class AdatbazisKezelo {
 
     }
 
+    /**
+     * Csatlakozik az adatbázishoz
+     */
     private void Csatlakozas() {
         try {
 

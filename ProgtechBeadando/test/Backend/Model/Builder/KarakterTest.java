@@ -12,22 +12,6 @@ public class KarakterTest {
     public KarakterTest() {
     }
 
-    @BeforeClass
-    public static void setUpClass() {
-    }
-
-    @AfterClass
-    public static void tearDownClass() {
-    }
-
-    @Before
-    public void setUp() {
-    }
-
-    @After
-    public void tearDown() {
-    }
-
     /**
      * Test of getKaszt method, of class Karakter.
      */
@@ -79,6 +63,15 @@ public class KarakterTest {
         assertEquals(ruhaSzin, instance.getRuhaSzin());
     }
 
+    @Test
+    public void testSetRuhaSzin1() {
+        System.out.println("Ruhaszin üres érték beállítás");
+        String ruhaSzin = "";
+        Karakter instance = new Karakter();
+        instance.setRuhaSzin(ruhaSzin);
+        assertEquals(ruhaSzin, instance.getRuhaSzin());
+    }
+
     /**
      * Test of setKaszt method, of class Karakter.
      */
@@ -91,6 +84,15 @@ public class KarakterTest {
         assertEquals(kaszt, instance.getKaszt());
     }
 
+    @Test
+    public void testSetKaszt1() {
+        System.out.println("Kaszt üres érték beállítása");
+        String kaszt = "";
+        Karakter instance = new Karakter();
+        instance.setKaszt(kaszt);
+        assertEquals(kaszt, instance.getKaszt());
+    }
+
     /**
      * Test of setNev method, of class Karakter.
      */
@@ -98,6 +100,15 @@ public class KarakterTest {
     public void testSetNev() {
         System.out.println("teszt név beállítás");
         String nev = "mate";
+        Karakter instance = new Karakter();
+        instance.setNev(nev);
+        assertEquals(nev, instance.getNev());
+    }
+
+    @Test
+    public void testSetNev1() {
+        System.out.println("teszt üres név beállítás");
+        String nev = "";
         Karakter instance = new Karakter();
         instance.setNev(nev);
         assertEquals(nev, instance.getNev());
